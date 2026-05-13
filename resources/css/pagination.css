@@ -1,0 +1,86 @@
+.pagination-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Laravel pagination nav */
+.pagination-wrapper nav {
+    width: 100%;
+}
+
+/* Hide Laravel's "Showing 1 to 5 of..." text if you do not want it */
+.pagination-wrapper nav>div:first-child {
+    display: none;
+}
+
+/* Desktop pagination container */
+.pagination-wrapper .hidden {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Hide result text section */
+.pagination-wrapper .hidden>div:first-child {
+    display: none;
+}
+
+/* Pagination button group */
+.pagination-wrapper span.inline-flex {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Page links and buttons */
+.pagination-wrapper a,
+.pagination-wrapper span[aria-current="page"] span,
+.pagination-wrapper span[aria-disabled="true"] span {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 12px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+/* Hover */
+.pagination-wrapper a:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+/* Active page */
+.pagination-wrapper span[aria-current="page"] span {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+/* Disabled previous/next */
+.pagination-wrapper span[aria-disabled="true"] span {
+    background: #f9fafb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* SVG arrows */
+.pagination-wrapper svg {
+    width: 18px;
+    height: 18px;
+}
