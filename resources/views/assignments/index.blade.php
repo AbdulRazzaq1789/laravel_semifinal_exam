@@ -16,7 +16,7 @@
             <button class="btn btn-info" type="submit">Search</button>
 
             @if ($search)
-                <a class="btn btn-edit" href="{{ route('assignment.index') }}">Clear</a>
+                <a class="btn btn-edit" href="{{ route('assignments.index') }}">Clear</a>
             @endif
         </form>
 

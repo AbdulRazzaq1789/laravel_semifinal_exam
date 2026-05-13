@@ -90,7 +90,7 @@ class AssignmentController extends Controller
 
         $assignment->update($validated);
 
-        return redirect()->route('assignments.index')->with('success', 'Assignment updated successfully!');
+        return redirect()->route('assignments.index')->with('info', 'Assignment updated successfully!');
     }
 
     /**

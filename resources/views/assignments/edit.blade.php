@@ -10,8 +10,9 @@
 @section('content')
 
 
-    <form action="{{ route('assignments.store') }}" method="POST" class="form">
+    <form action="{{ route('assignments.update', $assignment) }}" method="POST" class="form">
         @csrf
+        @method('PUT')
 
         <div class="input-group">
             <label for="">Title</label>
